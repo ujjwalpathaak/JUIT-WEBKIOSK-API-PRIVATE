@@ -1,14 +1,23 @@
-const request = require("request-promise");
-const cheerio = require("cheerio");
+const express = require("express");
+const cors = require("cors");
+const bodyParser = require("body-parser");
+const { router } = require("./routes/routes");
+require("dotenv").config();
 
-const URL = "https://aws.amazon.com/certification/faqs/#:~:text=How%20much%20does%20an%20AWS,Specialty%20exams%20are%20300%20USD.";
+const app = express();
 
-(async () => {
-  const response = await request(URL);
+var PORT = process.env.PORT || 8080;
 
-  let $ = cheerio.load(response);
+// Using cors
+app.use(cors());
+  
+// Declaring Routes
+app.use("/", router);
 
-  let trya = $('h1[id="AWS_Certification_FAQ"]').text();
+// Misc
+app.use(bodyParser.json({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true }));
 
-  console.log(trya);
-})();
+app.listen(PORT, () => {
+  console.log(`Server running on PORT ${PORT}`);
+});

@@ -1,0 +1,37 @@
+<HTML>
+
+    <head>
+        <TITLE>#### JUIT [ Signin Action ] </TITLE>
+        <script language="JavaScript" type="text/javascript">
+            <!-
+              if (top != self) top.document.title = document.title;
+             ->
+        </script>
+        <script>
+            if (window.history.forward(1) != null)
+                window.history.forward(1);
+        </script>
+    
+        <Script language="Javascript">
+            function LoadPageS(mWidth, mHeight) {
+                var params = "location=no,status=no,toolbar=no,menubar=no,scrollbars=no,resizable=yes,width=" + mWidth + ",height=" + mHeight + ",left=0,top=0,resizable=no";
+                window.opener = top;
+                window.close();
+                window.open("../StudentFiles/StudentPage.jsp", "", params);
+            }
+            function LoadPageE(mWidth, mHeight) {
+                var params = "location=no,status=no,toolbar=no,menubar=no,scrollbars=no,resizable=yes,width=" + mWidth + ",height=" + mHeight + ",left=0,top=0,resizable=no";
+                window.opener = top;
+                window.close();
+                window.open("../EmployeeFiles/EmployeePage.jsp", "", params);
+            }
+    
+        </script>
+    
+    </head>
+    
+    <BODY aLink=#ff00ff bgcolor=fce9c5 rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0 scroll=no>
+    
+    </BODY>
+    
+    </HTML>

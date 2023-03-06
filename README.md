@@ -2,66 +2,65 @@
 
 <img alt="Javascript" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"/> <img alt="Nodejs" src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/> <img alt="Puppeteer" src="https://img.shields.io/badge/Puppeteer-40B5A4?style=for-the-badge&logo=Puppeteer&logoColor=white"/>
 
-A __working api__ for accessing JUIT WebKiosk Data. Created using NodeJS            
+API for accessing Student Data through JUIT WebKiosk. Created using NodeJS, ExpressJS and Cheerio
 
+<!-- BASE URL:  -->
 
-BASE URL: https://juit-webkiosk-api.herokuapp.com/
+### Required req body
 
-
-### Required request body
 ```
 {
-    "username": "XXXXXXXX",
+    "rollnumber": "XXXXXXXX",
     "password": "XXXXXXXX"
 }
 ```
 
 ### Endpoints
 
-* ```/v1.0/login```    
+- `/login`  
   Login into the JUIT WebKiosk portal.
-  
 
-* ```/v1.0/attendance```    
+<!--
+* ```/v1.0/attendance```
   Get attendance details for a given semester.
-  
 
-* ```/v1.0/personalDetails```   
+
+* ```/v1.0/personalDetails```
   Get the personal details as on the webkiosk.
-  
 
-* ```/v1.0/cgpa```   
+
+* ```/v1.0/cgpa```
   Get the CGPA report for all semesters.
-  
 
-* ```/v1.0/grades```    
+
+* ```/v1.0/grades```
   Get the Exam Grades for a given semesters.
-  
 
-* ```/v1.0/semesters```    
+
+* ```/v1.0/semesters```
   Get the list of valid Semester Codes.
-  
 
-* ```/v1.0/faculty```   
+
+* ```/v1.0/faculty```
   Get the list of registered subject faculty.
-  
-  
-* ```/v1.0/subjects```   
+
+
+* ```/v1.0/subjects```
   Get the list of registered subjects for a given semester
 
 
 ## Examples
 
 - ### Personal Details.
-**Endpoint:**      
-```https://juit-webkiosk-api.herokuapp.com/v1.0/personalDetails/```      
-**Body:**     
+**Endpoint:**
+```https://juit-webkiosk-api.herokuapp.com/v1.0/personalDetails/```
+**Body:**
  ```
  {
     "username":"xxxxx",
     "password":"xxxxx"
  }
-```           
+```
 **Response:**
   ```
   {
@@ -80,18 +79,18 @@ BASE URL: https://juit-webkiosk-api.herokuapp.com/
   ```
 - ### Faculty
 
-**(NOTE- Pass in different semester codes, can get the available semester codes by calling the /semesters endpoint)**    
+**(NOTE- Pass in different semester codes, can get the available semester codes by calling the /semesters endpoint)**
 
-**Endpoint:**      
-```https://juit-webkiosk-api.herokuapp.com/v1.0/grades/2020ODDSEM```  
-**Body:**     
+**Endpoint:**
+```https://juit-webkiosk-api.herokuapp.com/v1.0/grades/2020ODDSEM```
+**Body:**
  ```
  {
     "username":"xxxxx",
     "password":"xxxxx"
  }
-```     
-**Response:**       
+```
+**Response:**
   ```
   [
     {
@@ -136,4 +135,4 @@ BASE URL: https://juit-webkiosk-api.herokuapp.com/
     }
 ]
   ```
- flexing online sem grades ⌐■_■
+ flexing online sem grades ⌐■_■ -->
