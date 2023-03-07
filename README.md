@@ -6,7 +6,7 @@ API for accessing Student Data through JUIT WebKiosk. Created using NodeJS, Expr
 
 <!-- BASE URL:  -->
 
-### Required req body
+### Required request body
 
 ```
 {
