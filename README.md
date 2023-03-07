@@ -59,6 +59,8 @@ API for accessing Student Data through JUIT WebKiosk. Created using NodeJS, Expr
 - `/attendance`  
   Get attendance details from the WebKiosk portal.
 
+**Response:**
+
 ```
 {
     "Subject0": "DATA SIMULATION LAB - 18B17CI473",
