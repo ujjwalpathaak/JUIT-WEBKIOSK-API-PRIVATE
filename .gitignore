@@ -39,10 +39,9 @@ build/Release
 
 # Dependency directories
 node_modules/
+.vscode/
 jspm_packages/
-
-abc.html
-
+ 
 # TypeScript v1 declaration files
 typings/
 
