@@ -56,6 +56,33 @@ API for accessing Student Data through JUIT WebKiosk. Created using NodeJS, Expr
 }
 ```
 
+- `/attendance`  
+  Get attendance details from the WebKiosk portal.
+
+```
+{
+    "Subject0": "DATA SIMULATION LAB - 18B17CI473",
+    "Attendance0": "80%",
+    "Subject1": "DESIGN & ANALYSIS OF ALGORITHMS - 18B11CI412",
+    "Attendance1": "85%",
+    "Subject2": "DESIGN AND ANALYSIS OF ALGORITHMS LAB - 18B17CI472",
+    "Attendance2": "60%",
+    "Subject3": "DISCRETE COMPUTATIONAL MATHEMATICS - 18B11CI414",
+    "Attendance3": "76%",
+    "Subject4": "ENVIRONMENTAL STUDIES - 18B11GE411",
+    "Attendance4": "90%",
+    "Subject5": "FINANCE AND ACCOUNTS - 18B11HS411",
+    "Attendance5": "80%",
+    "Subject6": "MODELING AND SIMULATION TECHNIQUES - 18B11CI413",
+    "Attendance6": "90%",
+    "Subject7": "OPERATING SYSTEM LAB - 18B17CI471",
+    "Attendance7": "81%",
+    "Subject8": "OPERATING SYSTEMS - 18B11CI411",
+    "Attendance8": "61%",
+    "Subject9": "WEB TECH LAB - 18B17CI474",
+    "Attendance9": "80%"
+}
+```
 <!--
 * ```/v1.0/attendance```
   Get attendance details for a given semester.
