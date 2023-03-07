@@ -1,41 +1,327 @@
 <HTML>
 
 <head>
-    <TITLE>#### JUIT [ Signin Action ] </TITLE>
+
+    <style type="text/css">
+        body {
+            scrollbar-3dlight-color: #ffd700;
+            scrollbar-arrow-color: #ff0;
+            scrollbar-base-color: =:#000ff0;
+            scrollbar-darkshadow-color: #000000;
+            scrollbar-face-color: #de6400;
+            scrollbar-highlight-color: #9900005;
+            scrollbar-shadow-color: #f0f
+        }
+    </style>
+    <TITLE>#### JUIT [ Student Personal Information ] </TITLE>
     <script language="JavaScript" type="text/javascript">
-        <!-
+        < ! 
           if (top != self) top.document.title = document.title;
-         ->
-    </script>
-    <script>
+        ->
         if (window.history.forward(1) != null)
             window.history.forward(1);
     </script>
 
-    <Script language="Javascript">
-        function LoadPageS(mWidth, mHeight) {
-            var params = "location=no,status=no,toolbar=no,menubar=no,scrollbars=no,resizable=yes,width=" + mWidth + ",height=" + mHeight + ",left=0,top=0,resizable=no";
-            window.opener = top;
-            window.close();
-            window.open("../StudentFiles/StudentPage.jsp", "", params);
-        }
-        function LoadPageE(mWidth, mHeight) {
-            var params = "location=no,status=no,toolbar=no,menubar=no,scrollbars=no,resizable=yes,width=" + mWidth + ",height=" + mHeight + ",left=0,top=0,resizable=no";
-            window.opener = top;
-            window.close();
-            window.open("../EmployeeFiles/EmployeePage.jsp", "", params);
-        }
-
-    </script>
-
 </head>
 
-<BODY aLink=#ff00ff bgcolor=fce9c5 rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0 scroll=no>
-    <br><img src='../Images/Error1.jpg'> &nbsp;&nbsp;&nbsp <b>
-        <font size=3 face='Arial' color='Red'> Invalid Password</font> <br> &nbsp;&nbsp;&nbsp <b>
-            <font size=3 face='Arial' color='Red'><b>For assistance, please contact to System Administrator</font> <br>
-            <p><a href=../index.jsp><img src='../Images/Back.jpg' border=0></a></p>
-            <br><br><br><br><br><br><br><br><br><br><br><br>
-</BODY>
+<body topmargin=0 rightmargin=0 leftmargin=10 bottommargin=0 bgcolor=#fce9c5>
 
-</HTML>
+    <CENTER><STRONG>
+            <FONT color=black face=Arial size=2>PERSONAL INFORMATION
+            </FONT>
+        </STRONG></CENTER>
+    <CENTER>
+
+        <TABLE cellspacing=0 cellpadding=2 frame=box align="center" border=1 style="FONT-FAMILY: Arial; 
+    FONT-SIZE: x-small" borderColor=black borderColorDark=white>
+            <TR>
+                <td colspan=3>&nbsp;
+                </td>
+                <td colspan=2 rowspan=6 align="center" style="width:130px; height:180px">
+                    <!-- <img SRC="ShowStudentImage.jsp" align="center" style="width:130px; height:180px "> -->
+                </TD>
+            </tr>
+            <tr>
+                <TD>
+                    <FONT color=black face=Arial size=2>&nbsp;Name
+                    </FONT>
+                </TD>
+                <td colspan=2>
+                    <FONT color=black>&nbsp;Ujjwal Pathak</FONT>&nbsp;
+                </td>
+            </TR>
+            <TR>
+                <TD>
+                    <FONT face=Arial size="2">
+                        <FONT color=black>&nbsp;Enrollment
+                            No.</FONT>
+                    </FONT>
+                </TD>
+                <TD colspan=2>
+                    <FONT color=black>&nbsp; 211105</FONT>&nbsp;
+                </TD>
+            </TR>
+            <TR>
+                <TD>
+                    <FONT color=black face=Arial size=2>&nbsp;Father's
+                        Name </FONT>
+                </TD>
+                <TD colspan=2>
+                    <FONT color=black>&nbsp;
+                        Deepak Pathak</FONT>&nbsp;
+                </TD>
+            </TR>
+            <TR>
+                <TD>
+                    <FONT color=black face=Arial size=2>&nbsp;Course </FONT>
+                </TD>
+                <TD colspan=2>
+                    <FONT color=black>&nbsp; B.T.
+                        <FONT face=Arial size=2>( CSE)</FONT>
+                    </FONT>
+                </TD>
+            </TR>
+            <tr>
+                <TD>
+                    <font color="black" face=Arial size=2>&nbsp;Semester</font>
+                </TD>
+                <TD align="left" colspan="2">
+                    <FONT color=black>&nbsp;
+                        4</FONT>&nbsp;
+                </TD>
+            </tr>
+
+            <TR align="middle">
+                <TD colspan="2">
+                    <P align=left>
+                        <FONT color=maroon face=Arial size=2><STRONG>&nbsp;Student Contact detail</STRONG></FONT>
+                    </P>
+                </TD>
+                <TD colspan="2">
+                    <P align=left>
+                        <FONT color=maroon face=Arial size=2><STRONG>&nbsp;Parent/Guardian Contact detail</STRONG>
+                        </FONT>
+                    </P>
+                </TD>
+            </TR>
+            <TR>
+                <TD>
+                    <FONT color=black face=Arial size=2>&nbsp;Cell/Mobile</FONT>
+                </TD>
+                <td>
+                    <FONT color=black>&nbsp;8448772593</FONT>&nbsp;
+                </td>
+                <TD>
+                    <FONT color=black face=Arial size=2>&nbsp;Cell/Mobile</FONT>
+                </TD>
+                <td>
+                    <FONT color=black>&nbsp;9871468245,9999574593</FONT>&nbsp;
+                </td>
+            </TR>
+            <TR>
+                <TD>
+                    <FONT color=black face=Arial size=2>&nbsp;Telephone</FONT>
+                </TD>
+                <td>
+                    <FONT color=black>&nbsp; - </FONT>&nbsp;
+                </td>
+                <TD>
+                    <FONT color=black face=Arial size=2>&nbsp;Telephone</FONT>
+                </TD>
+                <td>
+                    <FONT color=black>&nbsp; - </FONT>&nbsp;
+                </td>
+            </TR>
+
+            <TR>
+                <TD>
+                    <FONT color=black face=Arial size=2>&nbsp;E-Mail</FONT>
+                </TD>
+                <td>
+                    <FONT color=black>&nbsp;pathak2002ujjwal@gmail.com</FONT>&nbsp;
+                </td>
+                <TD>
+                    <FONT color=black face=Arial size=2>&nbsp;E-Mail</FONT>
+                </TD>
+                <td>
+                    <FONT color=black>&nbsp;pathakdeep2003@gmail.com,rupalpath@gmail.com</FONT>&nbsp;
+                </td>
+            </TR>
+
+
+            <TR align="middle" Rowspan='2"' colspan="2">
+                <TD colspan="2">
+                    <P align=left>
+                        <FONT color=maroon face=Arial size=2><STRONG>&nbsp;Correspondence Address</STRONG></FONT>
+                    </P>
+                </TD>
+                <td colspan="2">
+                    <P align=left>
+                        <FONT color=maroon face=Arial size=2><STRONG>&nbsp;Permanent Address
+                            </STRONG></FONT>
+                    </P>
+                </td>
+            </TR>
+            <TR align=left vAlign=top>
+                <TD>
+                    <FONT color=black face=Arial size=2>&nbsp;Address </FONT>
+                </TD>
+                <TD>
+                    <FONT color=black>&nbsp; 2308 Verona,</FONT><br>
+                    <FONT color=black>&nbsp; Mahagun Moderne Sector-78</FONT><br>
+                    <FONT color=black>&nbsp; </FONT>
+                </TD>
+                <td>
+                    <FONT color=black face=Arial size=2>&nbsp;Address </FONT>
+                </td>
+                <TD>
+                    <FONT color=black>&nbsp; 2308 Verona,</FONT><br>
+                    <FONT color=black>&nbsp; Mahagun Moderne Sector-78</FONT><br>
+                    <FONT color=black>&nbsp; </FONT>
+                </TD>
+            </TR>
+
+            <tr>
+                <td>
+                    <FONT color=black face=Arial size=2>&nbsp;District </FONT>
+                </td>
+                <TD>
+                    <FONT color=black>&nbsp;
+                        Gautam Buddh Nagar</FONT>&nbsp;
+                </TD>
+
+                <td>
+                    <FONT color=black face=Arial size=2>&nbsp;District </FONT>
+                </td>
+                <td>
+                    <FONT color=black>&nbsp;
+                        Gautam Buddh Nagar</FONT>&nbsp;
+                </td>
+            </tr>
+
+            <tr>
+                <TD>
+                    <FONT face=Arial size="2">
+                        <FONT color=black>&nbsp;City/PIN</FONT>
+                    </FONT>
+                </TD>
+                <TD>
+                    <FONT color=black>&nbsp; Noida<FONT face=Arial size=2>/201301</FONT>
+                    </FONT>
+                </TD>
+                <td>
+                    <FONT color=black face=Arial size=2>&nbsp;City/PIN</FONT>
+                </td>
+                <td>
+                    <FONT color=black>&nbsp; Noida<FONT face=Arial size=2>/201301</FONT>
+                    </FONT>
+                </td>
+            </tr>
+
+            <tr>
+                <TD>
+                    <FONT color=black face=Arial size=2>&nbsp;State </FONT>
+                </TD>
+                <TD>
+                    <FONT color=black>&nbsp; Uttarpradesh</FONT>&nbsp;
+                </TD>
+
+                <td>
+                    <FONT color=black face=Arial size=2>&nbsp;State </FONT>
+                </td>
+                <td>
+                    <FONT color=black>&nbsp;
+                        Uttarpradesh</FONT>&nbsp;
+                </td>
+            </tr>
+        </TABLE>
+    </CENTER>
+
+    <!-- Student Qualifications -->
+
+    <BR>
+    <CENTER><STRONG>
+            <FONT color=black face=Arial size=2>QUALIFICATION DETAILS</FONT>
+        </STRONG></CENTER>
+#table-1
+    <table align=center bgcolor=#fce9c5 class="sort-table" id="table-1" border=1 cellpadding=0 cellspacing=0
+        style="face=Arial;size=2">
+        <tr bgcolor="#ff8c00">
+            <TH>
+                <font color=white><b>Name of Board</b></font>
+            </TH>
+            <TH>
+                <font color=white><b>Exam Passed</b></font>
+            </TH>
+            <TH>
+                <font color=white><b>Year of Passing</b></font>
+            </TH>
+            <TH>
+                <font color=white><b>Division</b></font>
+            </TH>
+            <TH>
+                <font color=white><b>Max Marks</b></font>
+            </TH>
+            <TH>
+                <font color=white><b>Marks Obtained</b></font>
+            </TH>
+            <TH>
+                <font color=white><b>% of Marks</b></font>
+            </TH>
+            <TH>
+                <font color=white><b>Grade</b></font>
+            </TH>
+            <TH>
+                <font color=white><b>CGPA</b></font>
+            </TH>
+        </tr>
+
+
+        <tr>
+            <td>C.B.S.E</td>
+            <td>
+                <Font face=Arial size=2>12TH</font>
+            </td>
+            <td>2021</td>
+            <td> </td>
+            <td align=right>500</td>
+            <td align=right>420</td>
+            <td align=right>84</td>
+            <td align=center> </td>
+            <td align=center>0</td>
+        </tr>
+
+
+        <tr>
+            <td>C.B.S.E</td>
+            <td>
+                <Font face=Arial size=2>10TH</font>
+            </td>
+            <td>2019</td>
+            <td> </td>
+            <td align=right>600</td>
+            <td align=right>509</td>
+            <td align=right>84.83</td>
+            <td align=center> </td>
+            <td align=center>0</td>
+        </tr>
+
+
+    </TABLE><BR>
+
+    <center>
+        <table ALIGN=Center VALIGN=TOP>
+            <tr>
+                <td valign=middle>
+                    <IMG style="WIDTH: 28px; HEIGHT: 28px" src="../../Images/CampusConnectLogo.bmp">
+                    <FONT size=4 style="FONT-FAMILY: cursive"><b>Campus Connect</b></FONT>&nbsp;&nbsp;&nbsp;<FONT size=2
+                        style="FONT-FAMILY: cursive">... an <b>IRP</b> Solution</FONT><br>
+                    A product of <STRONG>JIL Information Technology Ltd.</STRONG></FONT><br>
+                    <FONT size=2>For your comments or suggestions please send an email at <A tabIndex=8
+                            href='mailto:info@juit.ac.in'>info@juit.ac.in</A></FONT>
+                </td>
+            </tr>
+        </table>
+</body>
+
+</Html>

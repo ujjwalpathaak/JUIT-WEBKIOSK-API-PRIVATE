@@ -20,13 +20,31 @@ API for accessing Student Data through JUIT WebKiosk. Created using NodeJS, Expr
 - `/login`  
   Login into the JUIT WebKiosk portal.
 
+- `/personaldetails`  
+  Get personal details from the WebKiosk portal.
+
+**Response:**
+
+```
+{
+    "name": "Ujjwal  Pathak",
+    "rollNumber": "211105",
+    "fatherName": "Deepak Pathak",
+    "course": "( CSE)",
+    "semester": "4",
+    "studentNumber": "8448772593",
+    "parentNumber": "9871468245,9999574593",
+    "studentEmail": "pathak2002ujjwal@gmail.com",
+    "parentEmail": "pathakdeep2003@gmail.com,rupalpath@gmail.com",
+    "address": "2308 Verona,  Mahagun Moderne Sector-78",
+    "xMarks": "(kindly use my API to check urs :| )",
+    "xiiMarks": "(kindly use my API to check urs :| )"
+}
+```
+
 <!--
 * ```/v1.0/attendance```
   Get attendance details for a given semester.
-
-
-* ```/v1.0/personalDetails```
-  Get the personal details as on the webkiosk.
 
 
 * ```/v1.0/cgpa```

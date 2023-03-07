@@ -1,8 +1,8 @@
-const express = require("express");
-const cors = require("cors");
-const bodyParser = require("body-parser");
-const { router } = require("./routes/routes");
-require("dotenv").config();
+import express from "express";
+import cors from "cors";
+import bodyParser from "body-parser";
+
+import router from "./routes/routes.js";
 
 const app = express();
 
@@ -10,7 +10,7 @@ var PORT = process.env.PORT || 8080;
 
 // Using cors
 app.use(cors());
-  
+
 // Declaring Routes
 app.use("/", router);
 

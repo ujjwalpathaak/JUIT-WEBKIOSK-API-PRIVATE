@@ -1,37 +1,54 @@
 <HTML>
 
     <head>
-        <TITLE>#### JUIT [ Signin Action ] </TITLE>
+    
+        <style type="text/css">
+            body {
+                scrollbar-3dlight-color: #ffd700;
+                scrollbar-arrow-color: #ff0;
+                scrollbar-base-color: =:#000ff0;
+                scrollbar-darkshadow-color: #000000;
+                scrollbar-face-color: #de6400;
+                scrollbar-highlight-color: #9900005;
+                scrollbar-shadow-color: #f0f
+            }
+        </style>
+        <TITLE>#### JIIT [ Student Personal Information ] </TITLE>
         <script language="JavaScript" type="text/javascript">
-            <!-
-              if (top != self) top.document.title = document.title;
-             ->
-        </script>
-        <script>
-            if (window.history.forward(1) != null)
-                window.history.forward(1);
-        </script>
-    
-        <Script language="Javascript">
-            function LoadPageS(mWidth, mHeight) {
-                var params = "location=no,status=no,toolbar=no,menubar=no,scrollbars=no,resizable=yes,width=" + mWidth + ",height=" + mHeight + ",left=0,top=0,resizable=no";
-                window.opener = top;
-                window.close();
-                window.open("../StudentFiles/StudentPage.jsp", "", params);
-            }
-            function LoadPageE(mWidth, mHeight) {
-                var params = "location=no,status=no,toolbar=no,menubar=no,scrollbars=no,resizable=yes,width=" + mWidth + ",height=" + mHeight + ",left=0,top=0,resizable=no";
-                window.opener = top;
-                window.close();
-                window.open("../EmployeeFiles/EmployeePage.jsp", "", params);
-            }
-    
+            <!-- 
+            if (top != self) top.document.title = document.title;
+            -->
+            if(window.history.forward(1)
+            !=
+            null)
+            window.history.forward(1);
         </script>
     
     </head>
     
-    <BODY aLink=#ff00ff bgcolor=fce9c5 rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0 scroll=no>
+    <body topmargin=0 rightmargin=0 leftmargin=10 bottommargin=0 bgcolor=#fce9c5>
     
-    </BODY>
+        <P>
+            <FONT face=Arial size="2">
+                <FONT color=black>Name</FONT>
+                <FONT color=crimson>:&nbsp;&nbsp; </FONT>
+                <FONT color=black>Profile not found</FONT>
+            </FONT>
+        </P>
     
-    </HTML>
+        <center>
+            <table ALIGN=Center VALIGN=TOP>
+                <tr>
+                    <td valign=middle>
+                        <IMG style="WIDTH: 28px; HEIGHT: 28px" src="../../Images/CampusConnectLogo.bmp">
+                        <FONT size=4 style="FONT-FAMILY: cursive"><b>Campus Connect</b></FONT>&nbsp;&nbsp;&nbsp;<FONT size=2
+                            style="FONT-FAMILY: cursive">... an <b>IRP</b> Solution</FONT><br>
+            A product of <STRONG>JIL Information Technology Ltd.</STRONG></FONT><br>
+                        <FONT size=2>For your comments or suggestions please send an email at <A tabIndex=8
+                                href='mailto:'></A></FONT>
+                    </td>
+                </tr>
+            </table>
+    </body>
+    
+    </Html>

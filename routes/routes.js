@@ -1,10 +1,11 @@
-const express = require("express");
+import express from "express";
 const router = express.Router();
 
 router.use(express.json());
 router.use(express.urlencoded({ extended: true }));
 
-const { Login } = require("../functions/Login.js");
+import Login from "../controllers/Login.js";
+import PersonalDetails from "../controllers/PersonalDetails.js";
 
 //Base get to URL
 router.get("/", (req, res) => {
@@ -14,4 +15,7 @@ router.get("/", (req, res) => {
 // Check Login
 router.post("/login", Login);
 
-module.exports = { router };
+// Get Personal Details
+router.post("/personaldetails", PersonalDetails);
+
+export default router;
