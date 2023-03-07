@@ -25,10 +25,10 @@ const Login = async (req, res) => {
       let check = $("body").html();
       if (check == null) {
         // console.log("Correct Password");
-        res.status(200).send(`User ${rollnumber} Logged In`);
+        res.status(200).send({ response: `User ${rollnumber} Logged In` });
       } else {
         // console.log("Wrong Password");
-        res.status(401).send("Wrong Credientials");
+        res.status(401).send({ response: "Wrong Credientials" });
       }
     })();
   });

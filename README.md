@@ -20,6 +20,20 @@ API for accessing Student Data through JUIT WebKiosk. Created using NodeJS, Expr
 - `/login`  
   Login into the JUIT WebKiosk portal.
 
+**Response:**
+
+```
+{
+    "response": "User 211105 Logged In"
+}
+```
+
+```
+{
+    "response": "Wrong Credientials"
+}
+```
+
 - `/personaldetails`  
   Get personal details from the WebKiosk portal.
 
