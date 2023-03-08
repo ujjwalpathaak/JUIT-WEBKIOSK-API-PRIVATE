@@ -4,7 +4,7 @@
 
 API for accessing Student Data through JUIT WebKiosk. Created using NodeJS, ExpressJS and Cheerio
 
-<!-- BASE URL:  -->
+BASE URL: https://juit-webkiosk-api-6v2h.onrender.com/
 
 ### Required request body
 
