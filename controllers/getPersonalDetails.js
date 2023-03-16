@@ -55,10 +55,10 @@ const PersonalDetails = async (req, res) => {
       "table:nth-child(1) tr:nth-child(12) td:nth-child(4) font"
     ).text();
     let xMarks = $(
-      "table[id='table-1'] tr:nth-child(2) td:nth-child(7)"
+      "table[id='table-1'] tr:nth-child(3) td:nth-child(7)"
     ).text();
     let xiiMarks = $(
-      "table[id='table-1'] tr:nth-child(3) td:nth-child(7)"
+      "table[id='table-1'] tr:nth-child(2) td:nth-child(7)"
     ).text();
     let details = {
       name: name.trim(),
