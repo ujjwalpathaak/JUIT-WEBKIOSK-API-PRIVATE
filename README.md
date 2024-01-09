@@ -129,37 +129,123 @@ BASE URL: https://juit-webkiosk-api-6v2h.onrender.com/
 
 - `/marks`  
   Get marks according to semester code.
+Required request body
 
+```
+{
+    "rollnumber": "XXXXXXXX",
+    "password": "XXXXXXXX",
+    "examcode": "2022ODDSEM",
+}
+```
 **Response:**
 
 ```
 [
     {
-        "Subject": "DESIGN & ANALYSIS OF ALGORITHMS- 18B11CI412",
-        "T1Marks": "8.0"
+        "Subject": "DATA STRUCTURES AND ALGORITHMS- 18B11CI211",
+        "P1Marks": "N/A",
+        "P2Marks": "N/A",
+        "P3Marks": "N/A",
+        "T1Marks": "6.0",
+        "T2Marks": "12.0",
+        "T3Marks": "20.0"
     },
     {
-        "Subject": "DISCRETE COMPUTATIONAL MATHEMATICS- 18B11CI414",
-        "T1Marks": "9.0"
+        "Subject": "DATA STRUCTURES AND ALGORITHMS LAB- 18B17CI271",
+        "P1Marks": "16.0",
+        "P2Marks": "20.0",
+        "P3Marks": "51.0",
+        "T1Marks": "N/A",
+        "T2Marks": "N/A",
+        "T3Marks": "N/A"
     },
     {
-        "Subject": "FINANCE AND ACCOUNTS- 18B11HS411",
-        "T1Marks": "11.5"
+        "Subject": "ELECTRICAL SCIENCES- 18B11EC211",
+        "P1Marks": "N/A",
+        "P2Marks": "N/A",
+        "P3Marks": "N/A",
+        "T1Marks": "9.0",
+        "T2Marks": "3.0",
+        "T3Marks": "15.0"
     },
     {
-        "Subject": "MODELING AND SIMULATION TECHNIQUES- 18B11CI413",
-        "T1Marks": "10.0"
+        "Subject": "ELECTRICAL SCIENCES LAB- 18B17EC271",
+        "P1Marks": "16.0",
+        "P2Marks": "10.0",
+        "P3Marks": "48.0",
+        "T1Marks": "N/A",
+        "T2Marks": "N/A",
+        "T3Marks": "N/A"
     },
     {
-        "Subject": "OPERATING SYSTEMS- 18B11CI411",
-        "T1Marks": "10.0"
+        "Subject": "ENGINEERING GRAPHICS- 18B17GE173",
+        "P1Marks": "15.0",
+        "P2Marks": "14.0",
+        "P3Marks": "43.0",
+        "T1Marks": "N/A",
+        "T2Marks": "N/A",
+        "T3Marks": "N/A"
+    },
+    {
+        "Subject": "ENGINEERING MATHEMATICS-II- 18B11MA211",
+        "P1Marks": "N/A",
+        "P2Marks": "N/A",
+        "P3Marks": "N/A",
+        "T1Marks": "12.0",
+        "T2Marks": "7.0",
+        "T3Marks": "3.0"
+    },
+    {
+        "Subject": "ENGINEERING PHYSICS LAB-II- 18B17PH271",
+        "P1Marks": "13.0",
+        "P2Marks": "13.0",
+        "P3Marks": "46.0",
+        "T1Marks": "N/A",
+        "T2Marks": "N/A",
+        "T3Marks": "N/A"
+    },
+    {
+        "Subject": "ENGINEERING PHYSICS-II- 18B11PH211",
+        "P1Marks": "N/A",
+        "P2Marks": "N/A",
+        "P3Marks": "N/A",
+        "T1Marks": "13.0",
+        "T2Marks": "8.0",
+        "T3Marks": "3.0"
+    },
+    {
+        "Subject": "LIFE SKILLS AND EFFECTIVE COMMUNICATION- 21B11HS211",
+        "P1Marks": "N/A",
+        "P2Marks": "N/A",
+        "P3Marks": "N/A",
+        "T1Marks": "10.0",
+        "T2Marks": "16.0",
+        "T3Marks": "23.0"
+    },
+    {
+        "Subject": "LIFE SKILLS AND EFFECTIVE COMMUNICATION LAB- 21B17HS271",
+        "P1Marks": "14.0",
+        "P2Marks": "15.0",
+        "P3Marks": "44.0",
+        "T1Marks": "N/A",
+        "T2Marks": "N/A",
+        "T3Marks": "N/A"
     }
 ]
 ```
 
 - `/faculty`  
   Login into the JUIT WebKiosk portal.
+Required request body
 
+```
+{
+    "rollnumber": "XXXXXXXX",
+    "password": "XXXXXXXX",
+    "examcode": "2022ODDSEM",
+}
+```
 **Response:**
 
 ```
@@ -209,7 +295,15 @@ BASE URL: https://juit-webkiosk-api-6v2h.onrender.com/
 
 - `/subjects`  
   Login into the JUIT WebKiosk portal.
+Required request body
 
+```
+{
+    "rollnumber": "XXXXXXXX",
+    "password": "XXXXXXXX",
+    "examcode": "2022ODDSEM",
+}
+```
 **Response:**
 
 ```
