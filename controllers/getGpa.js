@@ -30,13 +30,8 @@ const Gpa = async (req, res) => {
 
     $("table[id='table-1'] tbody tr td:nth-child(1) a").each(function (index) {
       let semester = $(this).text();
-      let sgpa = $(
-        `table[id='table-1'] tbody tr:nth-child(${index + 1}) td:nth-child(7)`
-      ).text();
-      let cgpa = $(
-        `table[id='table-1'] tbody tr:nth-child(${index + 1}) td:nth-child(8)`
-      ).text();
-
+      let sgpa = $(`table[id='table-1'] tbody tr:nth-child(${index + 1}) td:nth-child(7)`).text();
+      let cgpa = $(`table[id='table-1'] tbody tr:nth-child(${index + 1}) td:nth-child(8)`).text();
       gpa.push({
         Semester: semester,
         SGPA: sgpa,

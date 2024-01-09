@@ -31,12 +31,33 @@ const Marks = async (req, res) => {
 
     $("table[id='table-1'] tbody tr td:nth-child(2)").each(function (index) {
       let subject = $(this).text();
-      let marks2 = $(
+      let P1Marks = $(
         `table[id='table-1'] tbody tr:nth-child(${index + 1}) td:nth-child(3)`
       ).text();
+      let P2Marks = $(
+        `table[id='table-1'] tbody tr:nth-child(${index + 1}) td:nth-child(4)`
+      ).text();
+      let P3Marks = $(
+        `table[id='table-1'] tbody tr:nth-child(${index + 1}) td:nth-child(5)`
+      ).text();
+      let T1Marks = $(
+        `table[id='table-1'] tbody tr:nth-child(${index + 1}) td:nth-child(6)`
+      ).text();
+      let T2Marks = $(
+        `table[id='table-1'] tbody tr:nth-child(${index + 1}) td:nth-child(7)`
+      ).text();
+      let T3Marks = $(
+        `table[id='table-1'] tbody tr:nth-child(${index + 1}) td:nth-child(8)`
+      ).text();
+      
       marks.push({
         Subject: subject,
-        T1Marks: marks2,
+        P1Marks: P1Marks == "  " ? "n/a" : P1Marks,
+        P2Marks: P2Marks == "  " ? "n/a" : P2Marks,
+        P3Marks: P3Marks == "  " ? "n/a" : P3Marks,
+        T1Marks: T1Marks == "  " ? "n/a" : T1Marks,
+        T2Marks: T2Marks == "  " ? "n/a" : T2Marks,
+        T3Marks: T3Marks == "  " ? "n/a" : T3Marks,
       });
     });
     res.status(200).send(marks);

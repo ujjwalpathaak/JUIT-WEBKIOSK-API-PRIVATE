@@ -21,6 +21,7 @@ const Login = async (req, res) => {
 
   rq(options).then(function (response) {
     (async () => {
+      console.log(response.body);
       let $ = cheerio.load(response.body);
       let check = $("body").html();
       if (check == null) {

@@ -28,16 +28,9 @@ const Attendance = async (req, res) => {
     let attendance = [];
     $("table[id='table-1'] tbody tr td:nth-child(2)").each(function (index) {
       let subject = $(this).text();
-      let temp = $(
-        `table[id='table-1'] tbody tr:nth-child(${index + 1}) td:nth-child(6) a`
-      ).text();
+      let temp = $(`table[id='table-1'] tbody tr:nth-child(${index + 1}) td:nth-child(6) a`).text();
       if (temp == "") {
-        let atten =
-          $(
-            `table[id='table-1'] tbody tr:nth-child(${
-              index + 1
-            }) td:nth-child(3) a`
-          ).text() + "%";
+        let atten =$(`table[id='table-1'] tbody tr:nth-child(${index + 1}) td:nth-child(4) a`).text() + "%";
         attendance.push({
           subject: subject,
           attendance: atten,

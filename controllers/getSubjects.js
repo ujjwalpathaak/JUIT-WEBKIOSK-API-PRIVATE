@@ -14,7 +14,6 @@ const Subjects = async (req, res) => {
           UserType: "S",
           MemberCode: rollnumber,
           Password: password,
-          Password: password,
           ExamCode: examcode,
         },
         resolveWithFullResponse: true,
@@ -30,30 +29,14 @@ const Subjects = async (req, res) => {
     let subjects = [];
     $("table[width='100%'] tbody tr td:nth-child(2)").each(function (index) {
       if (index !== 0) {
-        if (
-          $(
-            `table[width='100%'] tbody tr:nth-child(${
-              index + 1
-            }) td:nth-child(3)`
-          ).html() == "&nbsp;"
-        ) {
-          let total = $(
-            `table[width='100%'] tbody tr:nth-child(${
-              index + 1
-            }) td:nth-child(2)`
-          ).text();
-
+        if ($(`table[width='100%'] tbody tr:nth-child(${index + 1}) td:nth-child(3)`).html() == "&nbsp;") {
+          let total = $(`table[width='100%'] tbody tr:nth-child(${index + 1}) td:nth-child(2)`).text();
           subjects.push({
             totalCredits: total,
           });
-          res.status(200).send(subjects);
         } else {
           let subject = $(this).text();
-          let credits = $(
-            `table[width='100%'] tbody tr:nth-child(${
-              index + 1
-            }) td:nth-child(3)`
-          ).text();
+          let credits = $(`table[width='100%'] tbody tr:nth-child(${index + 1}) td:nth-child(3)`).text();
           subjects.push({
             subject: subject,
             credits: credits,
@@ -61,7 +44,7 @@ const Subjects = async (req, res) => {
         }
       }
     });
-    // res.status(200).send(subjects);
+     res.status(200).send(subjects);
   } catch (err) {
     console.log(err);
   }

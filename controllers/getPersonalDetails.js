@@ -23,6 +23,7 @@ const PersonalDetails = async (req, res) => {
     const personalDetailsHTML = await rq.get(
       "https://webkiosk.juit.ac.in:9443/StudentFiles/PersonalFiles/StudPersonalInfo.jsp"
     );
+    
     let $ = cheerio.load(personalDetailsHTML);
     let name = $("table:nth-child(1) tr:nth-child(2) td:nth-child(2) font")
       .text()

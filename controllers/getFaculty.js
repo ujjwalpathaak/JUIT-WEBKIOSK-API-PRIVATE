@@ -36,46 +36,26 @@ const Faculty = async (req, res) => {
     $("table[align='middle'] tr td:nth-child(2)").each(function (index) {
       if (index !== 0) {
         let subject = remove_linebreaks($(this).text());
-        if (
-          remove_linebreaks(
-            $(
-              `table[align='middle'] tr:nth-child(${index + 1}) td:nth-child(3)`
-            ).text()
-          ).length !== 1
-        ) {
+        if (remove_linebreaks($(`table[align='middle'] tr:nth-child(${index + 1}) td:nth-child(3)`).text()).length !== 1) {
           let temp = $(
             `table[align='middle'] tr:nth-child(${index + 1}) td:nth-child(3)`
           ).text();
           let subFaculty = remove_linebreaks(temp);
           let tutFaculty;
-          if (
-            remove_linebreaks(
-              $(
-                `table[align='middle'] tr:nth-child(${
-                  index + 1
-                }) td:nth-child(4)`
-              ).text()
-            ).length !== 1
-          ) {
-            let temp = $(
-              `table[align='middle'] tr:nth-child(${index + 1}) td:nth-child(4)`
-            ).text();
+          if (remove_linebreaks($(`table[align='middle'] tr:nth-child(${index + 1}) td:nth-child(4)`).text()).length !== 1) {
+            let temp = $(`table[align='middle'] tr:nth-child(${index + 1}) td:nth-child(4)`).text();
             tutFaculty = remove_linebreaks(temp);
           }
-          tutFaculty
-            ? faculty.push({
+          tutFaculty ? faculty.push({
                 subject: subject,
                 lecFaculty: subFaculty,
                 tutFaculty: tutFaculty,
-              })
-            : faculty.push({
+              }) : faculty.push({
                 subject: subject,
                 lecFaculty: subFaculty,
               });
         } else {
-          let temp = $(
-            `table[align='middle'] tr:nth-child(${index + 1}) td:nth-child(5)`
-          ).text();
+          let temp = $(`table[align='middle'] tr:nth-child(${index + 1}) td:nth-child(5)`).text();
           let subFaculty = remove_linebreaks(temp);
           faculty.push({
             subject: subject,
